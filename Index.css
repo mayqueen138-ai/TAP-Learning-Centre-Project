@@ -18,8 +18,14 @@ body {
 }
 .link-container {
 }
-.link-container button {
+.link-container-for-large-view button {
   border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.link-container-for-mobile-view button {
+ border: none;
   background-color: unset;
   cursor: pointer;
 }
@@ -306,195 +312,27 @@ body {
   color: #234b45;
 }
 
-/* RESPONSIVE CSS */
-
-/* Tablet */
-@media screen and (max-width: 1023px) {
-  .sec1-container {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .sec2-container {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .flex-container {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .sec4-container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-/* Tablet */
-@media screen and (max-width: 900px) {
-  .sec1-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .sec2-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .flex-container { 
-    flex-direction: column;   
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .right-container{
-    flex-direction: column;   
-  }
-
-  .twobox-container{
-    flex-direction: column;   
-  }
-  
-  .second-container{
-    flex-direction: column;   
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .onebox-container{
-    flex-direction: row;   
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .sec4-container{
-    flex-direction: column;
-  }
-  .box-1 {
-     flex-direction: column;
-    grid-column: 1/3;
-    grid-row : 1/3;
-  }
-    .box-2 {
-    grid-column: 1/3;
-    grid-row : 3/4;
-  }
-   .box-3 {
-    grid-column: 4/6;
-    grid-row : 2/3;
-  }
-   .box-4 {
-    grid-column: 1/3;
-    grid-row : 3/4;
-  }
-  .box-5 {
-    grid-column: 4/6;
-    grid-row : 3/4;
-  }
-     .box-6 {
-    grid-column: 1/3;
-    grid-row : 4/5;
-  }
-  .box-7 {
-    grid-column: 4/6;
-    grid-row : 4/5;
-  }
-}
-
-/* Phone */
-@media screen and (max-width : 450px) {
-    .heading {
-        font-size: 30px;
-    }
-    .sec1-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .sec2-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .sec3-heading{
-    flex-direction: column;
-  }
-  
-  .twobox-container{
-    flex-direction: column;
-  }
-
-  .first-container{
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-   
-  }
-  
-  .second-container{
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-   
-  }
-  .onebox-container{
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .flex-container { 
-    flex-direction: column;   
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .box-1 {
-    flex-direction: column;
-    grid-column: 1/6;
-    grid-row : 1/3;
-  }
-  .box-2 {
-    grid-column: 1/6;
-    grid-row : 3/4;
-  }
-  .box-3 {
-    grid-column: 1/6;
-    grid-row : 4/5;
-  }
-   .box-4 {
-    grid-column: 1/6;
-    grid-row : 5/6;
-  }
-  .box-5 {
-    grid-column: 1/6;
-    grid-row : 6/7;
-  }
-     .box-6 {
-    grid-column: 1/6;
-    grid-row : 7/8;
-  }
-  .box-7 {
-    grid-column: 1/6;
-    grid-row : 8/9;
-  }
-}
 /* Section 5 */
 .sec5-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 20px;
   background-color: rgb(16, 57, 143);
   padding: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .sec5-heading{
   font-family: 'Times New Roman', Times, serif;
   color: #fafafa;
   text-align: center;
-  padding-left: 90px;
-  padding-right: 90px; 
+  
 }
 
 .sec5-subtitle{
@@ -600,16 +438,289 @@ body {
   align-items: center;
   background-color: rgb(241, 232, 232);
   border-bottom: 1px solid rgb(211, 201, 201);
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 0px;
-  margin-bottom: 90px;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left:90px;
+  padding-right:90px ;
   color: #295b54;
   font-size: 10px;
 
 }
+.secfooter-button{
+  display: flex;
+  gap: 20px;
+}
+
+.link-container-for-mobile-view {
+  display: none;
+}
+
+/* RESPONSIVE CSS */
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+  .sec1-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .sec2-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .flex-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .sec4-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .sec5-container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .sec6-container{
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+  .footer-heading{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .sec1-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sec2-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .flex-container { 
+    flex-direction: column;   
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .right-container{
+    flex-direction: column;   
+  }
+
+  .twobox-container{
+    flex-direction: column;   
+  }
+  
+  .second-container{
+    flex-direction: column;   
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .onebox-container{
+    flex-direction: row;   
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sec4-container{
+    flex-direction: column;
+  }
+  .box-1 {
+     flex-direction: column;
+    grid-column: 1/3;
+    grid-row : 1/3;
+  }
+    .box-2 {
+    grid-column: 1/3;
+    grid-row : 3/4;
+  }
+   .box-3 {
+    grid-column: 4/6;
+    grid-row : 2/3;
+  }
+   .box-4 {
+    grid-column: 1/3;
+    grid-row : 3/4;
+  }
+  .box-5 {
+    grid-column: 4/6;
+    grid-row : 3/4;
+  }
+     .box-6 {
+    grid-column: 1/3;
+    grid-row : 4/5;
+  }
+  .box-7 {
+    grid-column: 4/6;
+    grid-row : 4/5;
+  }
+  
+  .sec5-subtitle{
+    padding-left: 0px;
+    padding-right: 0px ;
+  }
+  
 
 
+}
+@media screen and (max-width : 700px){
+  .sec5-button{
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width : 570px){
+  .sec6-container{
+    gap: 0px;
+  }
+  .sec6-box1{
+    grid-column: 1/6;
+  }
+  
+  .sec6-box3{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .sec6-box4{
+    grid-column: 1/6;
+    grid-row: 3/4;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+  }
+}
+
+
+/* Phone */
+@media screen and (max-width : 450px) {
+    .heading {
+        font-size: 30px;
+    }
+    .sec1-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sec2-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sec3-heading{
+    flex-direction: column;
+  }
+  
+  .twobox-container{
+    flex-direction: column;
+  }
+
+  .first-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  }
+  
+  .second-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  }
+  .onebox-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .flex-container { 
+    flex-direction: column;   
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .box-1 {
+    flex-direction: column;
+    grid-column: 1/6;
+    grid-row : 1/3;
+  }
+  .box-2 {
+    grid-column: 1/6;
+    grid-row : 3/4;
+  }
+  .box-3 {
+    grid-column: 1/6;
+    grid-row : 4/5;
+  }
+   .box-4 {
+    grid-column: 1/6;
+    grid-row : 5/6;
+  }
+  .box-5 {
+    grid-column: 1/6;
+    grid-row : 6/7;
+  }
+     .box-6 {
+    grid-column: 1/6;
+    grid-row : 7/8;
+  }
+  .box-7 {
+    grid-column: 1/6;
+    grid-row : 8/9;
+  }
+
+  .sec1-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .sec2-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .flex-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .sec4-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec5-container{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .sec6-container{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .footer-heading{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .left-container, .right-container {
+    padding : 0px;
+  }
+    .header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .link-container-for-mobile-view {
+  display: block;
+}
+.link-container-for-large-view {
+  display: none;
+}
+}
 
 
